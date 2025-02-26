@@ -1,59 +1,86 @@
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../CSS/Styles.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="about-us.html">Nosotros</a></li>
-          <li><a href="portfolio.html">Proyectos</a></li>
-          <li><a href="services.html">Servicios</a></li>
-          <li><a href="contact.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section class="team-section">
-        <h2>Nosotros</h2>
-        <div class="team-nav">
-          <button onclick="">Miembro 1</button>
-          <button onclick="">Miembro 2</button>
-          <button onclick="">Miembro 1</button>
-          <button onclick="">Miembro 2</button>
-          <button onclick="">Miembro 1</button>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nosotros</title>
+  <link rel="stylesheet" href="../CSS/Styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about-us.html">Nosotros</a></li>
+        <li><a href="portfolio.html">Proyectos</a></li>
+        <li><a href="services.html">Servicios</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="team-section">
+      <h2>Nosotros</h2>
+      <div class="team-nav">
+        <!-- Botones como enlaces -->
+        <button onclick="location.href='#member1'">Esau Zamora</button>
+        <button onclick="location.href='#member2'">Pedro Urquijo</button>
+        <button onclick="location.href='#member3'">Habram Bass</button>
+        <button onclick="location.href='#member4'">Karim Trujaiba</button>
+        <button onclick="location.href='#member5'">Brasierl</button>
+      </div>
+      <div id="member-content">
+        <!-- Contenido de los miembros -->
+        <div id="member1" class="team-member">
+          <img src="images/member1.jpg" alt="Esau Zamora" />
+          <h3>Esau Zamora</h3>
+          <p>
+            Habilidades: Desarrollo Web, Python, JavaScript<br />
+            Experiencia: 5 años en desarrollo web<br />
+            Lenguajes: HTML, CSS, JavaScript, Python
+          </p>
         </div>
-        <div id="member-content">
-          <div id="member1" class="team-member active">
-            <img src="images/member1.jpg" alt="Miembro 1" />
-            <h3>Nombre del Miembro 1</h3>
-            <p>
-              Habilidades: Desarrollo Web, Python, JavaScript<br />
-              Experiencia: 5 años en desarrollo web<br />
-              Lenguajes: HTML, CSS, JavaScript, Python
-            </p>
-          </div>
-
-          <div id="member1" class="team-member active">
-            <img src="images/member1.jpg" alt="Miembro 1" />
-            <h3>Nombre del Miembro 1</h3>
-            <p>
-              Habilidades: Desarrollo Web, Python, JavaScript<br />
-              Experiencia: 5 años en desarrollo web<br />
-              Lenguajes: HTML, CSS, JavaScript, Python
-            </p>
-          </div>
+        <div id="member2" class="team-member">
+          <img src="images/member2.jpg" alt="Pedro Urquijo" />
+          <h3>Pedro Urquijo</h3>
+          <p>
+            Habilidades: Diseño Gráfico, UX/UI<br />
+            Experiencia: 4 años en diseño digital<br />
+            Herramientas: Adobe XD, Figma, Photoshop
+          </p>
         </div>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2023 DEVFORGE. Todos los derechos reservados.</p>
-    </footer>
-  </body>
+        <div id="member3" class="team-member">
+          <img src="images/member3.jpg" alt="Habram Bass" />
+          <h3>Habram Bass</h3>
+          <p>
+            Habilidades: Backend, Bases de Datos<br />
+            Experiencia: 6 años en sistemas empresariales<br />
+            Lenguajes: Java, SQL, Node.js
+          </p>
+        </div>
+        <div id="member4" class="team-member">
+          <img src="images/member4.jpg" alt="Karim Trujaiba" />
+          <h3>Karim Trujaiba</h3>
+          <p>
+            Habilidades: Marketing Digital, SEO<br />
+            Experiencia: 3 años en estrategias digitales<br />
+            Herramientas: Google Analytics, SEMrush
+          </p>
+        </div>
+        <div id="member5" class="team-member">
+          <img src="images/member5.jpg" alt="Brasierl" />
+          <h3>Brasierl</h3>
+          <p>
+            Habilidades: Frontend, Animaciones<br />
+            Experiencia: 2 años en interfaces interactivas<br />
+            Lenguajes: HTML, CSS, JavaScript
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 DEVFORGE. Todos los derechos reservados.</p>
+  </footer>
+</body>
 </html>
