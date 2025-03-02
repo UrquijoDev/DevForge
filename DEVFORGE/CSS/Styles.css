@@ -133,13 +133,6 @@ footer p {
   color: #e0e0e0;
 }
 
-.team-member, .active, .proyect {
-  /* max-height: 40rem; 
-  overflow-y: auto;
-  padding: 20px;
-  border: 1px solid #ccc; */
-}
-
 #member1-proyect{
   max-height: 40rem;
   overflow-y: auto;
