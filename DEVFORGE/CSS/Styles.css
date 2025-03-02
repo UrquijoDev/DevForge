@@ -89,7 +89,7 @@ main {
 }
 
 .team-member img,  img {
-  max-width: 100%;
+  max-width: 70%;
   border-radius: 50%;
   margin-bottom: 1rem;
 }
