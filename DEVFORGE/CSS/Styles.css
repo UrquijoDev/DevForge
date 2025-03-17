@@ -130,7 +130,7 @@ footer p {
   color: #e0e0e0;
 }
 
-#member1-proyect {
+.team-member-proyect {
   max-height: 40rem;
   min-width: 10rem;
   overflow-y: auto;
@@ -144,7 +144,7 @@ footer p {
     gap: 1rem;
   }
 
-  #member1, #member1-proyect {
+  #member1, .team-member-proyect {
     width: 100%;
     padding: 1rem;
   }
