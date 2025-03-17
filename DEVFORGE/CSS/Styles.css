@@ -1,4 +1,4 @@
-/* Reset básico */
+/* Index */
 * {
   margin: 0;
   padding: 0;
@@ -137,7 +137,7 @@ footer p {
   padding: 20px;
 }
 
-/* Media queries para pantallas pequeñas */
+
 @media (max-width: 768px) {
   #member-content {
     grid-template-columns: 1fr;
@@ -161,3 +161,42 @@ footer p {
     font-size: 0.9rem;
   }
 }
+
+
+/* Index */
+
+/* Proyectos CSS */
+.Proyects {
+  display: flex; 
+
+  flex-wrap: wrap; 
+
+  gap: 2rem;
+}
+
+.Proyect-Container {
+  background-color: #303030;
+  padding: 2rem;
+  border-radius: 10px;
+  min-width: 40rem;
+  width: 40rem;
+  flex: 1;
+}
+
+.Proyect-Container .Proyect-label {
+  background-color: #5e5e5e;
+  padding: 3px;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.Proyect-Container .Proyect-Btn button {
+  margin: 1rem .5rem;
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  background-color: rgb(67, 131, 67);
+  padding: .5rem 1.5rem;
+}
+
+/* Proyectos CSS */  
