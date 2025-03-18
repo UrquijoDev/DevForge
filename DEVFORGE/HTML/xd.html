@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEVFORGE</title>
+    <!-- <link rel="stylesheet" href="../CSS/Prueba.css"> -->
+    <link rel="stylesheet" href="../CSS/Styles.css">
+
+    <link rel="icon" href="../IMAGES/Devforge3.jpg" type="image/x-icon" />
+
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="services.html">Servicios</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+    <div class="container">
+        <h2 class="title">Our Approach</h2>
+        <div class="approach-icons">
+            <div class="icon-item">
+                <img src="research-icon.png" alt="Research Icon">
+                <p>Research</p>
+            </div>
+            <div class="icon-item">
+                <img src="planning-icon.png" alt="Planning Icon">
+                <p>Planning</p>
+            </div>
+            <div class="icon-item">
+                <img src="production-icon.png" alt="Production Icon">
+                <p>Production</p>
+            </div>
+            <div class="icon-item">
+                <img src="testing-icon.png" alt="Testing Icon">
+                <p>Testing</p>
+            </div>
+            <div class="icon-item">
+                <img src="result-icon.png" alt="Result Icon">
+                <p>Result</p>
+            </div>
+        </div>
+        <div class="content-section">
+            <button class="nav-arrow prev" onclick="changeContent(-1)">&#10094;</button>
+            <div class="content-slides">
+                <div class="slide active">
+                    <img src="lab-image.png" alt="Lab Image" class="lab-image">
+                    <div class="text-content">
+                        <h3>Research & Analytics</h3>
+                        <p>The goal of the research process is to produce new knowledge and deepen understanding of a new subject. We start off with finding the right information which will help the product that we develop succeed.</p>
+                        <button class="details-button">DETAILS</button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="planning-image.png" alt="Planning Image" class="lab-image">
+                    <div class="text-content">
+                        <h3>Planning</h3>
+                        <p>We carefully plan each step of the project, ensuring timelines, resources, and objectives are aligned for success.</p>
+                        <button class="details-button">DETAILS</button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="production-image.png" alt="Production Image" class="lab-image">
+                    <div class="text-content">
+                        <h3>Production</h3>
+                        <p>In this phase, we focus on the development and execution of the project, bringing ideas into reality.</p>
+                        <button class="details-button">DETAILS</button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="testing-image.png" alt="Testing Image" class="lab-image">
+                    <div class="text-content">
+                        <h3>Testing</h3>
+                        <p>Thorough testing ensures quality and identifies areas for improvement before final delivery.</p>
+                        <button class="details-button">DETAILS</button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="results-image.png" alt="Results Image" class="lab-image">
+                    <div class="text-content">
+                        <h3>Result</h3>
+                        <p>After all phases are complete, we deliver results that meet or exceed expectations.</p>
+                        <button class="details-button">DETAILS</button>
+                    </div>
+                </div>
+
+            </div>
+            <button class="nav-arrow next" onclick="changeContent(1)">&#10095;</button>
+        </div>
+    </div>
+    <footer>
+      <p>&copy;DEVFORGE. Todos los derechos reservados.</p>
+    </footer>
+    <script src="../JS/OpenTab.js"></script>
+</body>
+</html>
