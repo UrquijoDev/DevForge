@@ -172,45 +172,20 @@ footer p {
 /* Proyectos CSS */
 
 .Container-Proyect {
-  background-color: #2c2c2c;
-  border-radius: 10px;
-  padding: 2rem;
-  max-width: 1000px;
-  margin: 2rem auto;
+  background-color: #333;
+  border-radius: 10px;  
+  padding-top: 1.5rem;
+  padding-bottom: 2.9rem;
+}
+
+.Container-Proyect h1 {
   text-align: center;
+  margin-bottom: 10px;
 }
-
-h1 {
-  font-size: 2rem;
-  color: #ff4d4d;
-  margin-bottom: 1.5rem;
-}
-
-.Members-Proyect {
+.Members-Proyect{
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
   margin-bottom: 2rem;
-}
-
-.Members-Proyect img {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  transition: transform 0.3s ease-in-out;
-}
-
-.Members-Proyect img:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 0px 15px rgba(255, 77, 77, 0.7);
-}
-
-/* Carrusel de Proyectos */
-.Content-Arrow-Proyect {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .nav-arrow {
@@ -224,37 +199,73 @@ h1 {
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 50%;
-  transition: background-color 0.3s;
-  z-index: 10;
 }
 
 .nav-arrow:hover {
-  background-color: rgba(255, 77, 77, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.nav-arrow.prev {
-  left: -50px; /* Ajusta la distancia según tu diseño */
+.prev {
+  left: 10px;
 }
 
-.nav-arrow.next {
-  right: -50px; /* Ajusta la distancia según tu diseño */
+.next {
+  right: 10px;
 }
 
+.content-slides {
+  position: relative;
+  overflow: hidden;
+}
 
 .slide {
   display: none;
+  transition: opacity 0.6s ease-in-out;
   text-align: center;
 }
 
 .slide.active {
-  display: block;
-  animation: fadeIn 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+.slide.active h3 {
+  color: #ff4d4d;
 }
+
+.slide.active img {
+  max-width: 10rem;
+  max-height: 10rem;
+  margin: 1rem;
+}
+
+.Members-Proyect img {
+  width: 9rem;
+  height: 9rem;
+  margin: 0;
+}
+
+.Members-Proyect  img:hover { 
+  border: 10px solid #363d44; 
+  box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.7); 
+  cursor: pointer; 
+}
+.Members-Proyect h3 {
+  text-align: center;
+}
+
+.Proyect-label.enable, .enable{
+  background-color: #5e5e5e;
+  padding: 3px;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.Proyect-label.disable {
+  display: none;
+}
+
+
 
 /* Proyectos CSS */  
 

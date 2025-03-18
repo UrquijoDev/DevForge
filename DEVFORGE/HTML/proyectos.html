@@ -1,80 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DEVFORGE</title>
-    
-    <link rel="stylesheet" href="../CSS/Styles.css">
-    <link rel="icon" href="../IMAGES/Devforge3.jpg" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
-<body>
+    <!-- <link rel="stylesheet" href="../CSS/Prueba.css"> -->
+    <link rel="stylesheet" href="../CSS/Styles.css" />
+
+    <link rel="icon" href="../IMAGES/Devforge3.jpg" type="image/x-icon" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="proyectos.html">Proyectos</a></li>
-                <li><a href="services.html">Servicios</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="services.html">Servicios</a></li>
+                    <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section class="Container-Proyect">
-            <h1>Proyectos Destacados</h1>
-            <div class="Members-Proyect">
-                <div class="team-Proyect active">
-                    <img src="../IMAGES/icon1.png" onclick="ButtonMemberProyect('member1')" alt="Pedro">
-                    <h3>Pedro</h3>
-                </div>
-                <div class="team-Proyect active">
-                    <img src="../IMAGES/icon2.jpg" onclick="ButtonMemberProyect('member2')" alt="Esau">
-                    <h3>Esau</h3>
-                </div>
-                <div class="team-Proyect active">
-                    <img src="../IMAGES/icon3.jpg" onclick="ButtonMemberProyect('member3')" alt="Karim">
-                    <h3>Karim</h3>
-                </div>
-                <div class="team-Proyect active">
-                    <img src="../IMAGES/icon4.png" onclick="ButtonMemberProyect('member4')" alt="Abraham">
-                    <h3>Abraham</h3>
-                </div>
-                <div class="team-Proyect active">
-                    <img src="../IMAGES/icon5.png" onclick="ButtonMemberProyect('member5')" alt="Eduardo">
-                    <h3>Eduardo</h3>
-                </div>
+      <section>
+        <div class="Container-Proyect">
+          <div class="Members-Proyect">
+            <div class="team-Proyect active">
+              <img src="../IMAGES/icon1.png" onclick="ButtonMemberProyect('member1')"alt="" />
+              <h3>Pedro</h3>
             </div>
+            <div class="team-Proyect active">
+              <img src="../IMAGES/icon2.jpg" onclick="ButtonMemberProyect('member2')"alt="" />
+              <h3>Esau</h3>
+            </div>
+            <div class="team-Proyect active">
+              <img src="../IMAGES/icon3.jpg" onclick="ButtonMemberProyect('member3')"alt="" />
+              <h3>Karim</h3>
+            </div>
+            <div class="team-Proyect active">
+              <img src="../IMAGES/icon4.png" onclick="ButtonMemberProyect('member4')"alt="" />
+              <h3>Abraham</h3>
+            </div>
+            <div class="team-Proyect active">
+              <img src="../IMAGES/icon5.png" onclick="ButtonMemberProyect('member5')"alt="" />
+              <h3>Eduardo</h3>
+            </div>
+          </div>
+          <div class="Content-Arrow-Proyect">
+            <button class="nav-arrow prev" onclick="changeContent(-1)">
+              &#10094;
+            </button>
+            <div class="Content-Section-Proyect">
+              <div class="slide active">
+                <img src="../IMAGES/icon3.jpg" alt="" />
+                <div>
+                  <h3>Titulo Proyectos</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Provident tenetur quos, fugit porro aperiam at aut nihil ex,
+                    blanditiis voluptatum pariatur quo fugiat hic cumque ipsum
+                    minus, maxime excepturi magnam.
+                  </p>
 
-            <div class="Content-Arrow-Proyect">
-                <button class="nav-arrow prev" onclick="changeContent(-1)">&#10094;</button>
-                <div class="Content-Section-Proyect">
-                    <div class="slide active">
-                        <img src="../IMAGES/icon3.jpg" alt="Proyecto">
-                        <div>
-                            <h3>Proyecto 1</h3>
-                            <p>Descripción breve y profesional del proyecto, resaltando su impacto y tecnologías utilizadas.</p>
-                            <small id="member1" class="Proyect-label enable">Web Development</small>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <img src="../IMAGES/icon3.jpg" alt="Proyecto">
-                        <div>
-                            <h3>Proyecto 2</h3>
-                            <p>Una breve descripción del segundo proyecto.</p>
-                        </div>
-                    </div>
+                  <small id="member1" class="Proyect-label enable">Etiqueta pequeña 1</small>
+                  <small id="member2" class="Proyect-label disable">xcd</small>
+                  <small id="member3" class="Proyect-label disable">xd</small>
+                  <small id="member4" class="Proyect-label disable">sda</small>
+
                 </div>
-                <button class="nav-arrow next" onclick="changeContent(1)">&#10095;</button>
+              </div>
+
+              <div class="slide">
+                <img src="../IMAGES/icon3.jpg" alt="" />
+
+                <div>
+                  <h3>Titulo Proyectos</h3>
+                  <p>xd</p>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="../IMAGES/icon3.jpg" alt="" />
+
+                <div>
+                  <h3>Titulo Proyectos</h3>
+                  <p>xd</p>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="../IMAGES/icon3.jpg"  alt="" />
+
+                <div>
+                  <h3>Titulo Proyectos</h3>
+                  <p>xd</p>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="../IMAGES/icon3.jpg"  alt="" />
+
+                <div>
+                  <h3>Titulo Proyectos</h3>
+                  <p>x2</p>
+                </div>
+              </div>
             </div>
-        </section>
+            <button class="nav-arrow next" onclick="changeContent(1)">
+              &#10095;
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
-
     <footer>
-        <p>&copy; DEVFORGE. Todos los derechos reservados.</p>
+      <p>&copy;DEVFORGE. Todos los derechos reservados.</p>
     </footer>
-
     <script src="../JS/ArrowFunction.js"></script>
-</body>
+  </body>
 </html>
