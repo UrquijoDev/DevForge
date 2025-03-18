@@ -1,22 +1,18 @@
 function ButtonMemberProyect(memberId) {
-
-  const selectedMember = document.getElementById('member1'); 
-  const etiqueta = document.querySelectorAll('.Proyect-label'); 
+  // Obtener TODAS las etiquetas de proyecto
+  const etiquetas = document.querySelectorAll('.Proyect-label');
   
-  etiqueta.forEach(etiqueta => {
+  // Desactivar todas las etiquetas primero
+  etiquetas.forEach(etiqueta => {
     etiqueta.classList.remove('enable');
     etiqueta.classList.add('disable');
-    console.log("xd")
   });
-  selectedMember.classList.add('enable');
-  
-//   if (selectedMember) {
-//     selectedMember.classList.add('enable');
-//   }
-  
-//   if (selectedMember) {
-//     etiqueta.classList.add('enable');
-//   }
 
+  // Activar solo la etiqueta correspondiente al miembro seleccionado
+  const selectedMember = document.getElementById(memberId);
+  if (selectedMember) {
+    selectedMember.classList.remove('disable');
+    selectedMember.classList.add('enable');
+  }
 }
 
