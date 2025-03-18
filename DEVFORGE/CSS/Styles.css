@@ -205,6 +205,26 @@ h1 {
   box-shadow: 0px 0px 15px rgba(255, 77, 77, 0.7);
 }
 
+.Proyect-label.enable {
+  visibility: visible;
+  background-color: #5e5e5e;
+  padding: 3px;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.Proyect-label {
+  background-color: #5e5e5e;
+  padding: 3px;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.Proyect-label.disable {
+  display: none;
+}
+
+
 /* Carrusel de Proyectos */
 .Content-Arrow-Proyect {
   position: relative;
