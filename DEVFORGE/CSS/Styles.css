@@ -296,7 +296,59 @@ h1 {
   }
 
 /* Services */
+.Services-Container-Members div {
+  background-color: #2c2c2c;
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 2rem;
+  height: 8rem;
+  display: flex;
+  align-items: center; 
+  
+}
+.Services-Container-Members div:hover {
+  border: 10px solid #363d44; 
+  box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.7); 
+  cursor: pointer; 
+  transform: scale(1.05); 
+}
 
+.Services-Section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.Services-Container-Members img{
+ margin-right: 7rem;
+ width: 7rem;
+}
+
+.Services-Container{
+  background-color: #2c2c2c;
+  border-radius: 20px;
+  display: flex;
+}
+
+.Services-Info.off{
+  display: none;
+}
+
+.Services-Info.on{
+  background-color: #2c2c2c;
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.Services-Info h3{          
+color: white; 
+text-align: center;
+padding-left: 2rem;
+        
+}
+
+/* services */
 /* Estilos para el formulario de login */
 .login-section {
   max-width: 400px;
