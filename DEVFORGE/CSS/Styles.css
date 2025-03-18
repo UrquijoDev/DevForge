@@ -211,6 +211,7 @@ h1 {
   padding: 3px;
   border-radius: 5px;
   margin-top: 1rem;
+  display: inline;
 }
 
 .Proyect-label {
@@ -218,6 +219,7 @@ h1 {
   padding: 3px;
   border-radius: 5px;
   margin-top: 1rem;
+  display: none;
 }
 
 .Proyect-label.disable {
