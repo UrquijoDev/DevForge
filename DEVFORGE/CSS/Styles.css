@@ -295,60 +295,101 @@ h1 {
     gap: 2rem;
   }
 
-/* Services */
-.Services-Container-Members div {
-  background-color: #2c2c2c;
-  border-radius: 20px;
-  padding: 1rem;
-  margin: 2rem;
-  height: 8rem;
-  display: flex;
-  align-items: center; 
-  
-}
-.Services-Container-Members div:hover {
-  border: 10px solid #363d44; 
-  box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.7); 
-  cursor: pointer; 
-  transform: scale(1.05); 
-}
 
-.Services-Section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-}
+  .Services-Container-Members div {
+    background-color: #2c2c2c;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 2rem;
+    height: 8rem;
+    display: flex;
+    align-items: center; 
+    
+  }
+  .Services-Container-Members div:hover {
+    border: 10px solid #363d44; 
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.7); 
+    cursor: pointer; 
+    transform: scale(1.05); 
+  }
 
-.Services-Container-Members img{
- margin-right: 7rem;
- width: 7rem;
-}
+  .Services-Section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
 
-.Services-Container{
-  background-color: #2c2c2c;
-  border-radius: 20px;
-  display: flex;
-}
+  .Services-Container-Members img{
+    width: 7rem;
+    margin-right: 1rem; 
+    flex-shrink: 0; 
+  }
+  .Services-Container-Members h3 {
+    color: white;
+    text-align: center;
+    margin: 0; 
+    font-size: 1.5rem;
+    flex-grow: 1; 
+  }
 
-.Services-Info.off{
-  display: none;
-}
+  .Services-Container{
+    background-color: #2c2c2c;
+    border-radius: 20px;
+    display: flex;
+  }
 
-.Services-Info.on{
-  background-color: #2c2c2c;
-  border-radius: 20px;
-  padding: 1rem;
-  margin: 2rem;
-}
+  .Services-Info.off{
+    display: none;
+  }
 
-.Services-Info h3{          
-color: white; 
-text-align: center;
-padding-left: 2rem;
-        
-}
+  .Services-Info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content:first baseline; 
+    padding: 2rem; 
+    max-height: 71vh;
+    overflow-y: auto;
+  }
 
+
+  .Services-Info.on{
+    background-color: #2c2c2c;
+    border-radius: 20px;
+    padding: 2.5rem;
+    margin: 2rem;
+  }
+
+  .Services-Info h3{          
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem; 
+    font-size: 1.5rem; 
+          
+  }
+
+  .Services-Info p {
+    color: white;
+    text-align: justify; 
+    max-width: 80%; 
+    line-height: 1.6; 
+  }
+
+  /*Imagenes en caso de ser necesario Pai*/
+  .Services-Info img {
+    max-width: 40%; 
+    height: auto; 
+    margin-bottom: 1rem; 
+  }
+
+  @media (max-width: 768px) {
+    .Services-Section {
+      grid-template-columns: 1fr; 
+    }
+  }
 /* services */
+
+
 /* Estilos para el formulario de login */
 .login-section {
   max-width: 400px;
