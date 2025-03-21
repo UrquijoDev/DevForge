@@ -120,11 +120,17 @@ main {
 .team-member p, p {
   font-size: 1rem;
 }
+.team-member ul, li{
+  font-size: 14px;
+  text-align: left;
 
+
+
+}
 footer {
   background-color: #212121;
   text-align: center;
-  padding: 1rem 0;
+  padding: .3rem 0;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -166,6 +172,14 @@ footer p {
   }
 }
 
+#proyect4 img{
+border-radius: 28px;
+margin-top: 40px;
+}
+
+#member4 img{
+  max-width: 20rem
+}
 
 /* Index */
 
@@ -275,7 +289,7 @@ h1 {
 
 @keyframes fadeIn {
   from { opacity: 0; }
-  to { opacity: 1; }
+  to { opacity: 5; }
 }
 
 /* Proyectos CSS */  
